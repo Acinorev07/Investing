@@ -23,4 +23,61 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+.mind-map-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.central-node {
+  position: absolute;
+  width: 300px;
+  padding: 20px;
+  border: 3px dashed #4a5568;
+  border-radius: 8px;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.central-node:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.mind-node {
+  position: absolute;
+  width: 200px;
+  padding: 15px;
+  border: 2px dashed #718096;
+  border-radius: 6px;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  transform-origin: center;
+}
+
+.mind-node:hover {
+  transform: scale(1.1) translate(var(--x), var(--y));
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  z-index: 5;
+}
+
+.mind-node.expanded {
+  width: 300px;
+  transform: scale(1.3) translate(var(--x), var(--y));
+  z-index: 20;
+  background-color: #f7fafc;
+  border-color: #4299e1;
 }

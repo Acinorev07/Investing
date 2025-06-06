@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Link from "next/link";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -25,9 +26,22 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`grid grid-rows-[60px_1fr_20px] ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+
+        <header className="flex flex-col text-center border-2">
+          <h2>Investigacion</h2>
+          <nav className="flex gap-2 outline-2 outline-offset-2 outline-blue-500 mb-2 ml-2 mr-2 ">
+             <Link href="/">Mapa Mental</Link>
+             <Link href="investigacion">Investigacion</Link>
+          </nav>
+        </header>
+        <main className="relative min-h-300 overflow-auto bg-indigo-500 border-6 m-6 flex justify-center items-center">
+           {children}
+        </main>
+        <footer className="border-2 ">
+          Pie de la aplicación
+        </footer>
       </body>
     </html>
   );
