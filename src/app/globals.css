@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+@import 'hamburgers/dist/hamburgers.css';
+
+@layer base {
+  .hamburger {
+    all: unset;  /*Evita que Tailwind lo sobrescriba */
+  }
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -26,7 +34,82 @@ body {
   
 }
 
-.mind-map-container {
+/* ... tus estilos existentes ... */
+
+.spinner-button {
+  width: 200px;
+  height: 80px;
+  display: grid;
+  place-content: center;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  text-align: center;
+  --border-angle: 0turn;
+  --main-bg: conic-gradient(
+    from var(--border-angle),
+    #213,
+    #112 5%,
+    #112 60%,
+    #213 95%
+  );
+  --gradient-border: conic-gradient(
+    from var(--border-angle),
+    transparent 25%,
+    #08f,
+    #103 99%,
+    transparent
+  );
+  border: solid 4px transparent;
+  border-radius: 1.5em;
+  background: 
+    var(--main-bg) padding-box,
+    var(--gradient-border) border-box;
+  background-position: center center;
+  animation: bg-spin 3s linear infinite;
+  transition: transform 0.2s ease;
+}
+
+.spinner-button:hover {
+  animation-play-state: paused;
+  transform: scale(1.05);
+}
+
+@keyframes bg-spin {
+  to {
+    --border-angle: 1turn;
+  }
+}
+
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}
+
+/* Estilos para modo oscuro */
+@media (prefers-color-scheme: dark) {
+  .spinner-button {
+    color: #ededed;
+    --main-bg: conic-gradient(
+      from var(--border-angle),
+      #112,
+      #001 5%,
+      #001 60%,
+      #112 95%
+    );
+    --gradient-border: conic-gradient(
+      from var(--border-angle),
+      transparent 25%,
+      #06d,
+      #002 99%,
+      transparent
+    );
+  }
+}
+
+/* .mind-map-container {
   position: relative;
   width: 100vw;
   height: 100vh;
@@ -80,4 +163,15 @@ body {
   z-index: 20;
   background-color: #f7fafc;
   border-color: #4299e1;
+} */
+
+/* Agrega esto a tu globals.css */
+section {
+    scroll-margin-top: 6rem; /* Ajusta según la altura de tu header */
+}
+
+@media (min-width: 1024px) {
+    section {
+        scroll-margin-top: 8rem;
+    }
 }
