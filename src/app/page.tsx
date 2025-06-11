@@ -13,7 +13,7 @@ export default function Home() {
           </nav>
         </header>
         <main className="relative min-h-300 overflow-auto bg-indigo-500 border-6 m-6 flex justify-center items-center">
-           <div className="flex gap-8">
+           <div className="flex flex-col lg:flex lg:flex-row gap-8">
           <Link href="/mindMap" className="spinner-button">
             Mapa Mental
           </Link>
