@@ -459,7 +459,7 @@ export default function Investigacion(){
                                     <div className="bg-blue-50 p-3 rounded-md">
                                     <h4 className="font-bold mb-1 text-blue-800">Cuantitativa:</h4>
                                     <ul className="list-disc pl-5 text-sm space-y-1">
-                                        <li>Modelo "Diferencias en Diferencias"</li>
+                                        <li>Modelo <q>Diferencias en Diferencias</q></li>
                                         <li>Análisis de 2,177 registros de pymes</li>
                                         <li>Variables: inversión en TIC, facturación, empleo</li>
                                     </ul>
