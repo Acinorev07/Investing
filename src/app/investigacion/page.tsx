@@ -20,6 +20,7 @@ export default function Investigacion(){
              <Link href="/investigacion">Investigación</Link>
           </nav>
         </header>
+
         <main className="min-h-screen bg-indigo-500 border-6 m-6">
             <div className="flex flex-col lg:flex-row">
                 <div className={`${isActive ? 'fixed z-50' : 'hidden'} lg:block lg:relative lg:w-1/5 lg:min-h-[calc(100vh-8rem)] border rounded-md`}>
@@ -42,6 +43,7 @@ export default function Investigacion(){
                 <div className="w-ful lg:w-4/5 bg-[#50d71e]">
 
                    <section id="seccion1" className="p-8 min-h-screen bg-white rounded-lg shadow-md">
+
                     {/* Título del Proyecto */}
                     <h2 id="titulo-proyecto" className="text-3xl font-bold mb-6 text-indigo-800 border-b-2 border-indigo-200 pb-2">
                         ¿Qué factores estratégicos y operacionales determinan que los emprendimientos de comercio electrónicos en Colombia superen los tres primeros años de operación?
@@ -49,9 +51,11 @@ export default function Investigacion(){
 
                     {/* Resumen */}
                     <div className="mb-8 bg-blue-50 p-6 rounded-lg">
+
                         <h3 id="resumen" className="text-2xl font-bold mb-4 text-blue-800">
                         Resumen
                         </h3>
+
                         <p className="text-gray-700 leading-relaxed">
                         El comercio electrónico en Colombia ha crecido significativamente, pero muchos emprendimientos no superan los tres primeros años de operación, etapa crítica conocida como <q className="font-semibold">valle de la muerte</q>. 
                         Factores como la adopción tecnológica, gestión operacional, acceso a financiación y competencia inciden en esta problemática, evidenciando una brecha entre el potencial del e-commerce y la sostenibilidad real de los negocios digitales en el país. 
@@ -64,9 +68,11 @@ export default function Investigacion(){
 
                     {/* Palabras clave */}
                     <div className="mb-8 bg-gray-50 p-6 rounded-lg">
+                        
                         <h3 id="palabras-clave" className="text-2xl font-bold mb-4 text-gray-800">
                         Palabras clave
                         </h3>
+
                         <div className="flex flex-wrap gap-2">
                         {["Comercio electrónico", "Colombia", "Empresas", "Mercado", "Marketing", "Crecimiento empresarial", "E-commerce", "Internet", "Barreras"].map((word, index) => (
                             <span key={index} className="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">
@@ -78,9 +84,11 @@ export default function Investigacion(){
 
                     {/* Justificación */}
                     <div className="mb-8 bg-green-50 p-6 rounded-lg">
+
                         <h3 id="justificacion" className="text-2xl font-bold mb-4 text-green-800">
                         Justificación de la Investigación
                         </h3>
+
                         <p className="text-gray-700 mb-4">
                         Esta investigación sobre los factores que determinan la supervivencia de emprendimientos de comercio electrónico 
                         en Colombia durante los primeros tres años se justifica desde tres dimensiones clave: <strong>relevancia académica, impacto socioeconómico y aplicabilidad práctica</strong>, 
@@ -123,6 +131,7 @@ export default function Investigacion(){
 
                     {/* Antecedentes */}
                     <div className="mb-8 bg-purple-50 p-6 rounded-lg">
+
                         <h3 id="antecedentes" className="text-2xl font-bold mb-4 text-purple-800">
                         Antecedentes o Estado Actual de la Temática
                         </h3>
@@ -213,9 +222,11 @@ export default function Investigacion(){
 
                     {/* Población */}
                     <div className="mb-8 bg-blue-50 p-6 rounded-lg">
+
                         <h3 id="poblacion-investigacion" className="text-2xl font-bold mb-4 text-blue-800">
                         Población o Conjunto de Elementos Objeto de la Investigación
                         </h3>
+
                         <div className="space-y-4">
                         <div className="bg-white p-4 rounded-md shadow-sm">
                             <h4 className="text-xl font-bold mb-2 text-blue-700">Unidad de Análisis</h4>
@@ -265,9 +276,11 @@ export default function Investigacion(){
 
                     {/* Objetivos */}
                     <div className="mb-8 bg-green-50 p-6 rounded-lg">
+
                         <h3 id="objetivos" className="text-2xl font-bold mb-4 text-green-800">
                         Objetivos
                         </h3>
+
                         <div className="bg-white p-4 rounded-md shadow-sm mb-6">
                         <h4 className="text-xl font-bold mb-2 text-green-700">Objetivo general</h4>
                         <p className="text-gray-700 pl-4 border-l-4 border-green-300">
@@ -378,6 +391,11 @@ export default function Investigacion(){
 
                     {/* Metodología */}
                     <div className="mb-8 bg-indigo-50 p-6 rounded-lg">
+
+                        <h3 id="metodologia" className="text-2xl font-bold mb-4 text-green-800">
+                        Metodologia
+                        </h3>
+
                         <div className="overflow-x-auto">
                         <table className="min-w-full bg-white rounded-lg overflow-hidden shadow-sm">
                             <thead className="bg-gray-100">
@@ -551,14 +569,240 @@ export default function Investigacion(){
                         </table>
                         </div>
                     </div>
+
                     </section>
-                    <section id="seccion2" className="p-8 min-h-screen">
-                        <h2 className="text-2x1 font-bold mb-4">
-                        Seccion 2
-                        
-                        </h2>
+                    <section id="seccion2" className="p-8 min-h-screen bg-gray-50">
+
+                        <div className="max-w-7xl mx-auto">
+                            {/* Título principal */}
+                            <h2 className="text-3xl font-bold mb-8 text-indigo-800 border-b-2 border-indigo-200 pb-2">
+                            Ejecución de la Investigación
+                            </h2>
+
+                            {/* Registro de Búsqueda */}
+                            <div className="mb-12 bg-white p-6 rounded-lg shadow-md">
+                            <h3 id="registro-busqueda" className="text-2xl font-bold mb-6 text-blue-800">
+                                Registro de Búsqueda Documental
+                            </h3>
                             
-                        </section>
+                            <div className="overflow-x-auto">
+                                <table className="min-w-full border border-gray-200">
+                                <thead className="bg-gray-100">
+                                    <tr>
+                                    <th className="px-4 py-3 text-left text-xs font-medium text-gray-700 uppercase tracking-wider border border-gray-300">Fecha de consulta</th>
+                                    <th className="px-4 py-3 text-left text-xs font-medium text-gray-700 uppercase tracking-wider border border-gray-300">Base de datos</th>
+                                    <th className="px-4 py-3 text-left text-xs font-medium text-gray-700 uppercase tracking-wider border border-gray-300">Términos de búsqueda</th>
+                                    <th className="px-4 py-3 text-left text-xs font-medium text-gray-700 uppercase tracking-wider border border-gray-300">Recursos Web</th>
+                                    <th className="px-4 py-3 text-left text-xs font-medium text-gray-700 uppercase tracking-wider border border-gray-300">Palabras Claves</th>
+                                    <th className="px-4 py-3 text-left text-xs font-medium text-gray-700 uppercase tracking-wider border border-gray-300">Contenido</th>
+                                    <th className="px-4 py-3 text-left text-xs font-medium text-gray-700 uppercase tracking-wider border border-gray-300">Resumen</th>
+                                    </tr>
+                                </thead>
+                                <tbody className="bg-white divide-y divide-gray-200">
+                                    {/* Fila 1 - Google Académico */}
+                                    <tr>
+                                    <td className="px-4 py-3 whitespace-nowrap border border-gray-300">12/06/2024</td>
+                                    <td className="px-4 py-3 whitespace-nowrap border border-gray-300">Google Académico</td>
+                                    <td className="px-4 py-3 border border-gray-300">
+                                        <ul className="list-disc pl-5 space-y-1">
+                                        <li><q>comercio electrónico Colombia</q></li>
+                                        <li><q>supervivencia empresas digitales</q></li>
+                                        <li><q>factores éxito e-commerce</q></li>
+                                        </ul>
+                                    </td>
+                                    <td className="px-4 py-3 border border-gray-300">Artículos PDF, Tesis</td>
+                                    <td className="px-4 py-3 border border-gray-300">
+                                        <div className="flex flex-wrap gap-1">
+                                        {["E-commerce", "Comercio electrónico", "Colombia", "Empresas digitales", "Supervivencia empresarial", "Factores críticos", "Primeros años"].map((tag, i) => (
+                                            <span key={i} className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">{tag}</span>
+                                        ))}
+                                        </div>
+                                    </td>
+                                    <td className="px-4 py-3 border border-gray-300">
+                                        <ul className="space-y-2">
+                                        <li><a href="https://journal.universidadean.edu.co/index.php/plou/article/view/1371" target="_blank" className="text-blue-600 hover:underline">¿Hacia dónde va el comercio electrónico en Colombia?</a></li>
+                                        <li><a href="https://www.proquest.com/openview/f098bb520fa2b09c34ea661067855b94/1" target="_blank" className="text-blue-600 hover:underline">El comercio electrónico un aliado estratégico</a></li>
+                                        </ul>
+                                    </td>
+                                    <td className="px-4 py-3 border border-gray-300">Análisis del estado actual y tendencias del e-commerce en Colombia</td>
+                                    </tr>
+
+                                    {/* Fila 2 - SciELO */}
+                                    <tr>
+                                    <td className="px-4 py-3 whitespace-nowrap border border-gray-300">15/06/2024</td>
+                                    <td className="px-4 py-3 whitespace-nowrap border border-gray-300">SciELO</td>
+                                    <td className="px-4 py-3 border border-gray-300">
+                                        <ul className="list-disc pl-5 space-y-1">
+                                        <li><q>emprendimiento digital Colombia</q></li>
+                                        <li><q>fracaso startups ecommerce</q></li>
+                                        </ul>
+                                    </td>
+                                    <td className="px-4 py-3 border border-gray-300">Artículos científicos</td>
+                                    <td className="px-4 py-3 border border-gray-300">
+                                        <div className="flex flex-wrap gap-1">
+                                        {["Startups", "Fracaso empresarial", "Emprendimiento", "TIC", "Modelos de negocio"].map((tag, i) => (
+                                            <span key={i} className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">{tag}</span>
+                                        ))}
+                                        </div>
+                                    </td>
+                                    <td className="px-4 py-3 border border-gray-300">
+                                        <ul className="space-y-2">
+                                        <li><a href="https://ciencia.lasalle.edu.co/server/api/core/bitstreams/570a9f02-7290-4f3e-bcd3-ecc0f6a7a287/content" target="_blank" className="text-blue-600 hover:underline">Evolución del comercio electrónico en Colombia</a></li>
+                                        </ul>
+                                    </td>
+                                    <td className="px-4 py-3 border border-gray-300">Estudios sobre evolución histórica y tasas de fracaso</td>
+                                    </tr>
+
+                                    {/* Fila 3 - Redalyc */}
+                                    <tr>
+                                    <td className="px-4 py-3 whitespace-nowrap border border-gray-300">18/06/2024</td>
+                                    <td className="px-4 py-3 whitespace-nowrap border border-gray-300">Redalyc</td>
+                                    <td className="px-4 py-3 border border-gray-300">
+                                        <ul className="list-disc pl-5 space-y-1">
+                                        <li><q>factores éxito ecommerce Colombia</q></li>
+                                        <li><q>estrategias operacionales comercio electrónico</q></li>
+                                        </ul>
+                                    </td>
+                                    <td className="px-4 py-3 border border-gray-300">Artículos, Revisiones</td>
+                                    <td className="px-4 py-3 border border-gray-300">
+                                        <div className="flex flex-wrap gap-1">
+                                        {["Éxito empresarial", "Estrategias", "Operaciones", "Logística", "Marketing digital"].map((tag, i) => (
+                                            <span key={i} className="bg-purple-100 text-purple-800 px-2 py-1 rounded text-xs">{tag}</span>
+                                        ))}
+                                        </div>
+                                    </td>
+                                    <td className="px-4 py-3 border border-gray-300">
+                                        <ul className="space-y-2">
+                                        <li><a href="https://repository.javeriana.edu.co/items/a7d5d4a6-2882-4d35-a7c9-bee5c82b2f65" target="_blank" className="text-blue-600 hover:underline">Barreras y retos del comercio electrónico</a></li>
+                                        </ul>
+                                    </td>
+                                    <td className="px-4 py-3 border border-gray-300">Identificación de barreras regulatorias y operacionales</td>
+                                    </tr>
+
+                                    {/* Fila 4 - Scopus */}
+                                    <tr>
+                                    <td className="px-4 py-3 whitespace-nowrap border border-gray-300">20/06/2024</td>
+                                    <td className="px-4 py-3 whitespace-nowrap border border-gray-300">Scopus</td>
+                                    <td className="px-4 py-3 border border-gray-300">
+                                        <ul className="list-disc pl-5 space-y-1">
+                                        <li><q>e-commerce survival factors</q></li>
+                                        <li><q>digital entrepreneurship Colombia</q></li>
+                                        </ul>
+                                    </td>
+                                    <td className="px-4 py-3 border border-gray-300">Artículos indexados</td>
+                                    <td className="px-4 py-3 border border-gray-300">
+                                        <div className="flex flex-wrap gap-1">
+                                        {["Supervivencia", "Factores críticos", "Emprendimiento digital", "Econometría", "Análisis cuantitativo"].map((tag, i) => (
+                                            <span key={i} className="bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-xs">{tag}</span>
+                                        ))}
+                                        </div>
+                                    </td>
+                                    <td className="px-4 py-3 border border-gray-300">
+                                        <ul className="space-y-2">
+                                        <li><a href="https://dialnet.unirioja.es/servlet/articulo?codigo=7678075" target="_blank" className="text-blue-600 hover:underline">Impacto del e-commerce en ventas de pymes</a></li>
+                                        </ul>
+                                    </td>
+                                    <td className="px-4 py-3 border border-gray-300">Estudios econométricos sobre impacto del e-commerce</td>
+                                    </tr>
+
+                                    {/* Fila 5 - Biblioteca SENA */}
+                                    <tr>
+                                    <td className="px-4 py-3 whitespace-nowrap border border-gray-300">22/06/2024</td>
+                                    <td className="px-4 py-3 whitespace-nowrap border border-gray-300">Biblioteca SENA</td>
+                                    <td className="px-4 py-3 border border-gray-300">
+                                        <ul className="list-disc pl-5 space-y-1">
+                                        <li><q>casos de éxito ecommerce Colombia</q></li>
+                                        <li><q>gestión operacional comercio electrónico</q></li>
+                                        </ul>
+                                    </td>
+                                    <td className="px-4 py-3 border border-gray-300">Libros, Informes técnicos</td>
+                                    <td className="px-4 py-3 border border-gray-300">
+                                        <div className="flex flex-wrap gap-1">
+                                        {["Casos de estudio", "Gestión operacional", "Best practices", "Estudios cualitativos"].map((tag, i) => (
+                                            <span key={i} className="bg-red-100 text-red-800 px-2 py-1 rounded text-xs">{tag}</span>
+                                        ))}
+                                        </div>
+                                    </td>
+                                    <td className="px-4 py-3 border border-gray-300">
+                                        <ul className="space-y-2">
+                                        <li><a href="http://biblos.unilibrecucuta.edu.co/ojs/index.php/derecho/article/view/231" target="_blank" className="text-blue-600 hover:underline">Legislación tributaria e-commerce</a></li>
+                                        </ul>
+                                    </td>
+                                    <td className="px-4 py-3 border border-gray-300">Marco regulatorio y aspectos legales del e-commerce</td>
+                                    </tr>
+                                </tbody>
+                                </table>
+                            </div>
+                            </div>
+
+                            {/* Recolección de Información */}
+                            <div className="bg-white p-6 rounded-lg shadow-md">
+                            <h3 id="recoleccion-informacion" className="text-2xl font-bold mb-6 text-blue-800">
+                                Recolección de la Información
+                            </h3>
+                            
+                            <div className="grid md:grid-cols-2 gap-8">
+                                {/* Columna izquierda - Datos generales */}
+                                <div className="space-y-6">
+                                <div className="bg-gray-50 p-4 rounded-md">
+                                    <h4 className="font-bold text-gray-700 mb-2">Técnica:</h4>
+                                    <p className="text-gray-800">Entrevista semiestructurada</p>
+                                </div>
+                                
+                                <div className="bg-gray-50 p-4 rounded-md">
+                                    <h4 className="font-bold text-gray-700 mb-2">Tipo de instrumento:</h4>
+                                    <p className="text-gray-800">Cuestionario guiado</p>
+                                </div>
+                                
+                                <div className="bg-gray-50 p-4 rounded-md">
+                                    <h4 className="font-bold text-gray-700 mb-2">Características:</h4>
+                                    <ul className="list-disc pl-5 space-y-1 text-gray-800">
+                                    <li>20 preguntas divididas en 4 secciones</li>
+                                    <li>Combinación de preguntas abiertas y cerradas</li>
+                                    <li>Duración estimada: 30-45 minutos</li>
+                                    <li>Formato digital (Google Forms) y presencial</li>
+                                    </ul>
+                                </div>
+                                
+                                <div className="bg-gray-50 p-4 rounded-md">
+                                    <h4 className="font-bold text-gray-700 mb-2">Elaborado por:</h4>
+                                    <p className="text-gray-800">Fredy Leonardo Acuña Prada</p>
+                                </div>
+                                </div>
+                                
+                                {/* Columna derecha - Instrumento */}
+                                <div className="bg-blue-50 p-6 rounded-md">
+                                <h4 className="text-xl font-bold mb-4 text-center text-blue-800">Nombre del Instrumento</h4>
+                                <p className="text-center font-medium mb-6"><q>Cuestionario sobre Factores de Supervivencia en Emprendimientos E-commerce</q></p>
+                                
+                                <div className="space-y-4">
+                                    <div>
+                                    <h5 className="font-bold text-gray-700 mb-2">Instrucciones:</h5>
+                                    <p className="text-gray-800">Responda con sinceridad todas las preguntas. No hay respuestas correctas o incorrectas. La información será tratada con confidencialidad.</p>
+                                    </div>
+                                    
+                                    <div>
+                                    <h5 className="font-bold text-gray-700 mb-2">Introducción:</h5>
+                                    <p className="text-gray-800">Este cuestionario busca identificar los factores clave que han permitido a su emprendimiento superar los primeros 3 años de operación. Agradecemos su tiempo y colaboración.</p>
+                                    </div>
+                                    
+                                    <div>
+                                    <h5 className="font-bold text-gray-700 mb-2">Desarrollo del instrumento:</h5>
+                                    <ol className="list-decimal pl-5 space-y-3 text-gray-800">
+                                        <li><strong>Datos generales:</strong> Nombre empresa, año fundación, sector, ubicación</li>
+                                        <li><strong>Estrategias clave:</strong> Marketing digital, gestión de clientes, diferenciación</li>
+                                        <li><strong>Operaciones:</strong> Logística, tecnología, proveedores</li>
+                                        <li><strong>Finanzas:</strong> Fuentes de financiación, flujo de caja</li>
+                                        <li><strong>Desafíos:</strong> Principales obstáculos superados</li>
+                                    </ol>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+
+                    </section>
                     <section id="seccion3" className="p-8 min-h-screen">
                         <h2 className="text-2x1 font-bold mb-4">
                         Seccion 3
@@ -581,6 +825,7 @@ export default function Investigacion(){
                             
                         </section>
                 </div>
+           
            </div>
           
         </main>
